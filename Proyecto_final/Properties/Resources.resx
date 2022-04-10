@@ -118,25 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="08399cb3af0ffdef88db1067b1075f7a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\08399cb3af0ffdef88db1067b1075f7a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="08399cb3af0ffdef88db1067b1075f7a1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\08399cb3af0ffdef88db1067b1075f7a1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Viper-Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Viper-Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="xmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\xmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="a43032e9c3d745149772aafb9dd95dfd--dodge-viper-car-logos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a43032e9c3d745149772aafb9dd95dfd--dodge-viper-car-logos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maximize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimize-window-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize-window-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="08399cb3af0ffdef88db1067b1075f7a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\08399cb3af0ffdef88db1067b1075f7a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="19-513" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\19-513.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="XX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\XX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maximizi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximizi1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maximizi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximizi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Viper-Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Viper-Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maximize2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximize2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="08399cb3af0ffdef88db1067b1075f7a1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\08399cb3af0ffdef88db1067b1075f7a1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maximize1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximize1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimize-window-xxl1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize-window-xxl1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
