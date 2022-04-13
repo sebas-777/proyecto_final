@@ -183,6 +183,16 @@ namespace Proyecto_final.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Viper_Logo1 {
+            get {
+                object obj = ResourceManager.GetObject("Viper-Logo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap xmark {
             get {
                 object obj = ResourceManager.GetObject("xmark", resourceCulture);
@@ -196,6 +206,16 @@ namespace Proyecto_final.Properties {
         internal static System.Drawing.Bitmap XX {
             get {
                 object obj = ResourceManager.GetObject("XX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap YRpzbK {
+            get {
+                object obj = ResourceManager.GetObject("YRpzbK", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

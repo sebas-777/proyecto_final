@@ -1,10 +1,31 @@
+using System;
+using System.Windows.Forms;
+using System.Threading;
+
 namespace Proyecto_final
 {
     public partial class Login : Form
     {
         public Login()
-        {
+        { 
+            //creamos un hilo
+            Thread t = new Thread(new ThreadStart(SplashStart));
+
+            // arrancamos el hilo 
+            t.Start();
+
+            //ponemos a dormir la formar  principal
+            Thread.Sleep(5000);
+
             InitializeComponent();
+
+            //finalizamos el hilo
+            t.Abort();
+        }
+
+        public void SplashStart()
+        {
+            Application.Run(new Login());
         }
 
       

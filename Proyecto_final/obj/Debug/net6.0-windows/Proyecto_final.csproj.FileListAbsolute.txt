@@ -18,3 +18,4 @@ C:\Users\Shebas\OneDrive\Escritorio\SEMETRES 5\proyecto_final\Proyecto_final\obj
 C:\Users\Shebas\OneDrive\Escritorio\SEMETRES 5\proyecto_final\Proyecto_final\obj\Debug\net6.0-windows\Proyecto_final.pdb
 C:\Users\Shebas\OneDrive\Escritorio\SEMETRES 5\proyecto_final\Proyecto_final\obj\Debug\net6.0-windows\Proyecto_final.genruntimeconfig.cache
 C:\Users\Shebas\OneDrive\Escritorio\SEMETRES 5\proyecto_final\Proyecto_final\obj\Debug\net6.0-windows\ref\Proyecto_final.dll
+C:\Users\Shebas\OneDrive\Escritorio\SEMETRES 5\proyecto_final\Proyecto_final\obj\Debug\net6.0-windows\Proyecto_final.fmrSplash.resources
