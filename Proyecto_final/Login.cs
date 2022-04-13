@@ -33,5 +33,33 @@ namespace Proyecto_final
             else if (WindowState == FormWindowState.Maximized)
                 WindowState = FormWindowState.Minimized;
         }
+         // habilta blanco en txtUsuario y panel 3, habilta el rojo en txtPassword y panel 5 
+        private void txtUsuario_Click(object sender, EventArgs e)
+        {
+           txtUsuario.BackColor = Color.White;
+            panel3.BackColor = Color.White;
+            panel5.BackColor = Color.Red;
+            txtPassword.BackColor = Color.Red;
+        }
+
+        // habilita blanco en txtPassword y panel 5 y habilita el rojo en txtUsuario y panel3
+        private void txtPassword_Click(object sender, EventArgs e)
+        {
+            txtPassword.BackColor = Color.White;
+            panel5.BackColor= Color.White;
+            panel3.BackColor = Color.Red;
+            txtUsuario.BackColor= Color.Red;
+        }
+
+        // deshabilita el cifrado el txtPassword
+        private void iconPictureBox5_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = false;   
+        }
+
+        private void iconPictureBox5_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar=true;
+        }
     }
 }
