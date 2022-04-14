@@ -1,6 +1,6 @@
 using System;
 using System.Windows.Forms;
-using System.Threading;
+
 
 namespace Proyecto_final
 {
@@ -9,24 +9,24 @@ namespace Proyecto_final
         public Login()
         { 
             //creamos un hilo
-            Thread t = new Thread(new ThreadStart(SplashStart));
+            // Thread t = new Thread(new ThreadStart(SplashStart));
 
             // arrancamos el hilo 
-            t.Start();
+            // t.Start();
 
             //ponemos a dormir la formar  principal
-            Thread.Sleep(5000);
+           // Thread.Sleep(5000);
 
             InitializeComponent();
 
             //finalizamos el hilo
-            t.Abort();
+           // t.Abort();
         }
 
-        public void SplashStart()
-        {
-            Application.Run(new Login());
-        }
+       // public void SplashStart()
+       // {
+          //  Application.Run(new fmrSplash());
+       // }
 
       
         //Evento click del boton cerrar
