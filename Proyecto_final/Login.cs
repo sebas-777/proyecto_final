@@ -8,28 +8,13 @@ namespace Proyecto_final
     {
         public Login()
         { 
-            //creamos un hilo
-            // Thread t = new Thread(new ThreadStart(SplashStart));
-
-            // arrancamos el hilo 
-            // t.Start();
-
-            //ponemos a dormir la formar  principal
-           // Thread.Sleep(5000);
+           
 
             InitializeComponent();
 
-            //finalizamos el hilo
-           // t.Abort();
+           
         }
-
-       // public void SplashStart()
-       // {
-          //  Application.Run(new fmrSplash());
-       // }
-
-      
-        //Evento click del boton cerrar
+         //Evento click del boton cerrar
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
