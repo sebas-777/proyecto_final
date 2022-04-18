@@ -1,6 +1,7 @@
 C:\Users\Shebas\OneDrive\Escritorio\SEMETRES 5\proyecto_final\Proyecto_final\bin\Debug\net6.0-windows\Proyecto_final.exe
 C:\Users\Shebas\OneDrive\Escritorio\SEMETRES 5\proyecto_final\Proyecto_final\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
 C:\Users\Shebas\OneDrive\Escritorio\SEMETRES 5\proyecto_final\Proyecto_final\obj\Debug\net6.0-windows\Proyecto_final.csproj.AssemblyReference.cache
+C:\Users\Shebas\OneDrive\Escritorio\SEMETRES 5\proyecto_final\Proyecto_final\obj\Debug\net6.0-windows\Proyecto_final.Cliente.resources
 C:\Users\Shebas\OneDrive\Escritorio\SEMETRES 5\proyecto_final\Proyecto_final\obj\Debug\net6.0-windows\Proyecto_final.fmrSplash.resources
 C:\Users\Shebas\OneDrive\Escritorio\SEMETRES 5\proyecto_final\Proyecto_final\obj\Debug\net6.0-windows\Proyecto_final.Login.resources
 C:\Users\Shebas\OneDrive\Escritorio\SEMETRES 5\proyecto_final\Proyecto_final\obj\Debug\net6.0-windows\Proyecto_final.Properties.Resources.resources
