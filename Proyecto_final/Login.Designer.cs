@@ -279,6 +279,7 @@
             // 
             this.iconPictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconPictureBox5.BackColor = System.Drawing.Color.Red;
+            this.iconPictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconPictureBox5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
@@ -328,7 +329,7 @@
             this.btnLogin.BackColor = System.Drawing.Color.Red;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Salmon;
+            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
