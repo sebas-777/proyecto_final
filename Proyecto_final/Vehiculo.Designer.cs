@@ -43,6 +43,10 @@
             this.txtKilometraje = new System.Windows.Forms.TextBox();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.cmbColor = new System.Windows.Forms.ComboBox();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -139,6 +143,7 @@
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(470, 20);
             this.txtCedula.TabIndex = 9;
+            this.txtCedula.Click += new System.EventHandler(this.txtCedula_Click);
             // 
             // txtMatricula
             // 
@@ -148,6 +153,7 @@
             this.txtMatricula.Name = "txtMatricula";
             this.txtMatricula.Size = new System.Drawing.Size(470, 20);
             this.txtMatricula.TabIndex = 10;
+            this.txtMatricula.Click += new System.EventHandler(this.txtMatricula_Click);
             // 
             // txtNumeroSerial
             // 
@@ -157,6 +163,7 @@
             this.txtNumeroSerial.Name = "txtNumeroSerial";
             this.txtNumeroSerial.Size = new System.Drawing.Size(470, 20);
             this.txtNumeroSerial.TabIndex = 11;
+            this.txtNumeroSerial.Click += new System.EventHandler(this.txtNumeroSerial_Click);
             // 
             // txtKilometraje
             // 
@@ -166,11 +173,14 @@
             this.txtKilometraje.Name = "txtKilometraje";
             this.txtKilometraje.Size = new System.Drawing.Size(470, 20);
             this.txtKilometraje.TabIndex = 12;
+            this.txtKilometraje.Click += new System.EventHandler(this.txtKilometraje_Click);
+            this.txtKilometraje.TextChanged += new System.EventHandler(this.txtKilometraje_TextChanged);
             // 
             // cmbTipo
             // 
             this.cmbTipo.BackColor = System.Drawing.Color.Red;
             this.cmbTipo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbTipo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cmbTipo.FormattingEnabled = true;
             this.cmbTipo.Items.AddRange(new object[] {
             "Automovil",
@@ -181,13 +191,16 @@
             "Volqueta"});
             this.cmbTipo.Location = new System.Drawing.Point(233, 274);
             this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(470, 28);
+            this.cmbTipo.Size = new System.Drawing.Size(470, 26);
             this.cmbTipo.TabIndex = 13;
+            this.cmbTipo.Click += new System.EventHandler(this.cmbTipo_Click);
             // 
             // cmbColor
             // 
             this.cmbColor.BackColor = System.Drawing.Color.Red;
             this.cmbColor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbColor.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cmbColor.ForeColor = System.Drawing.Color.Black;
             this.cmbColor.FormattingEnabled = true;
             this.cmbColor.Items.AddRange(new object[] {
             "Blanco",
@@ -199,8 +212,73 @@
             "Gris"});
             this.cmbColor.Location = new System.Drawing.Point(233, 403);
             this.cmbColor.Name = "cmbColor";
-            this.cmbColor.Size = new System.Drawing.Size(470, 28);
+            this.cmbColor.Size = new System.Drawing.Size(470, 26);
             this.cmbColor.TabIndex = 14;
+            this.cmbColor.Click += new System.EventHandler(this.cmbColor_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.BackColor = System.Drawing.Color.Black;
+            this.btnNuevo.FlatAppearance.BorderSize = 0;
+            this.btnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNuevo.ForeColor = System.Drawing.Color.Red;
+            this.btnNuevo.Location = new System.Drawing.Point(175, 567);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(94, 40);
+            this.btnNuevo.TabIndex = 15;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.Black;
+            this.btnModificar.FlatAppearance.BorderSize = 0;
+            this.btnModificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnModificar.ForeColor = System.Drawing.Color.Red;
+            this.btnModificar.Location = new System.Drawing.Point(423, 567);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(110, 40);
+            this.btnModificar.TabIndex = 16;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.BackColor = System.Drawing.Color.Black;
+            this.btnConsultar.FlatAppearance.BorderSize = 0;
+            this.btnConsultar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnConsultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnConsultar.ForeColor = System.Drawing.Color.Red;
+            this.btnConsultar.Location = new System.Drawing.Point(294, 567);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(111, 40);
+            this.btnConsultar.TabIndex = 17;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Black;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEliminar.ForeColor = System.Drawing.Color.Red;
+            this.btnEliminar.Location = new System.Drawing.Point(553, 567);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(110, 40);
+            this.btnEliminar.TabIndex = 18;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // Vehiculo
             // 
@@ -208,6 +286,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(12)))), ((int)(((byte)(21)))));
             this.ClientSize = new System.Drawing.Size(800, 619);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnConsultar);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.cmbColor);
             this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.txtKilometraje);
@@ -248,5 +330,9 @@
         private TextBox txtKilometraje;
         private ComboBox cmbTipo;
         private ComboBox cmbColor;
+        private Button btnNuevo;
+        private Button btnModificar;
+        private Button btnConsultar;
+        private Button btnEliminar;
     }
 }

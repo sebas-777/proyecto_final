@@ -17,6 +17,69 @@ namespace Proyecto_final
             InitializeComponent();
         }
 
-        
+       
+
+
+        private void txtCedula_Click(object sender, EventArgs e)
+        {
+            txtCedula.BackColor = Color.White;
+            txtMatricula.BackColor = Color.Red;
+            txtNumeroSerial.BackColor = Color.Red;
+            cmbColor.BackColor = Color.Red;
+            cmbTipo.BackColor = Color.Red;
+            txtKilometraje.BackColor = Color.Red;
+        }
+
+        private void txtMatricula_Click(object sender, EventArgs e)
+        {
+            txtCedula.BackColor = Color.Red;
+            txtMatricula.BackColor = Color.White;
+            txtNumeroSerial.BackColor = Color.Red;
+            txtKilometraje.BackColor= Color.Red;
+            cmbColor.BackColor= Color.Red;
+            cmbTipo.BackColor= Color.Red;
+        }
+
+        private void txtNumeroSerial_Click(object sender, EventArgs e)
+        {
+            txtCedula.BackColor= Color.Red;
+            txtMatricula.BackColor = Color.Red;
+            txtNumeroSerial.BackColor= Color.White;
+            txtKilometraje.BackColor = Color.Red;
+            cmbTipo.BackColor = Color.Red;
+            cmbColor.BackColor = Color.Red;
+        }
+
+        private void cmbTipo_Click(object sender, EventArgs e)
+        {
+            txtCedula.BackColor = Color.Red;
+            txtMatricula.BackColor = Color.Red;
+            txtNumeroSerial.BackColor = Color.Red;
+            txtKilometraje.BackColor = Color.Red;
+            cmbTipo.BackColor = Color.White;
+            cmbColor.BackColor = Color.Red;
+        }
+
+        private void cmbColor_Click(object sender, EventArgs e)
+        {
+            txtCedula.BackColor = Color.Red;
+            txtMatricula.BackColor = Color.Red;
+            txtNumeroSerial.BackColor = Color.Red;
+            txtKilometraje.BackColor= Color.Red;
+            cmbTipo.BackColor= Color.Red;
+            cmbColor.BackColor= Color.White;
+        }
+
+        private void txtKilometraje_Click(object sender, EventArgs e)
+        {
+            txtCedula.BackColor= Color.Red;
+            txtMatricula.BackColor= Color.Red;
+            txtNumeroSerial.BackColor= Color.Red;
+            txtKilometraje.BackColor = Color.White;
+            cmbColor.BackColor = Color.Red;
+            cmbTipo.BackColor = Color.Red;
+        }
+
+
     }
 }
