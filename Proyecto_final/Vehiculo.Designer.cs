@@ -71,9 +71,9 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(319, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 34);
+            this.label1.Size = new System.Drawing.Size(153, 34);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Vehiculo";
+            this.label1.Text = "VEHICULO";
             // 
             // label2
             // 
@@ -174,7 +174,6 @@
             this.txtKilometraje.Size = new System.Drawing.Size(470, 20);
             this.txtKilometraje.TabIndex = 12;
             this.txtKilometraje.Click += new System.EventHandler(this.txtKilometraje_Click);
-            this.txtKilometraje.TextChanged += new System.EventHandler(this.txtKilometraje_TextChanged);
             // 
             // cmbTipo
             // 
