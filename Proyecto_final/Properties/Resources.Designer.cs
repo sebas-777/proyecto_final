@@ -83,6 +83,16 @@ namespace Proyecto_final.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _08399cb3af0ffdef88db1067b1075f7a2 {
+            get {
+                object obj = ResourceManager.GetObject("08399cb3af0ffdef88db1067b1075f7a2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _19_513 {
             get {
                 object obj = ResourceManager.GetObject("19-513", resourceCulture);

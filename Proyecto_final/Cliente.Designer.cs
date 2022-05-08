@@ -44,9 +44,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.btnPrimero = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnUltimo = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnConsulta = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -117,8 +117,9 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.BackColor = System.Drawing.Color.Red;
+            this.txtNombre.BackColor = System.Drawing.Color.CadetBlue;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombre.Enabled = false;
             this.txtNombre.Location = new System.Drawing.Point(194, 162);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(370, 20);
@@ -127,8 +128,9 @@
             // 
             // txtApellidos
             // 
-            this.txtApellidos.BackColor = System.Drawing.Color.Red;
+            this.txtApellidos.BackColor = System.Drawing.Color.CadetBlue;
             this.txtApellidos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtApellidos.Enabled = false;
             this.txtApellidos.Location = new System.Drawing.Point(194, 227);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(370, 20);
@@ -137,18 +139,21 @@
             // 
             // txtCedula
             // 
-            this.txtCedula.BackColor = System.Drawing.Color.Red;
+            this.txtCedula.BackColor = System.Drawing.Color.CadetBlue;
             this.txtCedula.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCedula.Enabled = false;
             this.txtCedula.Location = new System.Drawing.Point(194, 296);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(370, 20);
             this.txtCedula.TabIndex = 8;
             this.txtCedula.Click += new System.EventHandler(this.txtCedula_Click);
+            this.txtCedula.Leave += new System.EventHandler(this.txtCedula_Leave);
             // 
             // txtDireccion
             // 
-            this.txtDireccion.BackColor = System.Drawing.Color.Red;
+            this.txtDireccion.BackColor = System.Drawing.Color.CadetBlue;
             this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDireccion.Enabled = false;
             this.txtDireccion.Location = new System.Drawing.Point(194, 350);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(370, 20);
@@ -157,8 +162,9 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.BackColor = System.Drawing.Color.Red;
+            this.txtTelefono.BackColor = System.Drawing.Color.CadetBlue;
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefono.Enabled = false;
             this.txtTelefono.Location = new System.Drawing.Point(194, 412);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(370, 20);
@@ -167,8 +173,9 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.BackColor = System.Drawing.Color.Red;
+            this.txtEmail.BackColor = System.Drawing.Color.CadetBlue;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Enabled = false;
             this.txtEmail.Location = new System.Drawing.Point(194, 472);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(370, 20);
@@ -210,64 +217,68 @@
             this.btnPrimero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnPrimero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrimero.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPrimero.ForeColor = System.Drawing.Color.Red;
+            this.btnPrimero.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnPrimero.Location = new System.Drawing.Point(23, 672);
             this.btnPrimero.Name = "btnPrimero";
             this.btnPrimero.Size = new System.Drawing.Size(54, 39);
             this.btnPrimero.TabIndex = 15;
             this.btnPrimero.Text = "|<";
             this.btnPrimero.UseVisualStyleBackColor = false;
+            this.btnPrimero.Click += new System.EventHandler(this.btnPrimero_Click);
             // 
-            // button2
+            // btnAnterior
             // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(83, 672);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(54, 39);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "<<";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAnterior.BackColor = System.Drawing.Color.Black;
+            this.btnAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAnterior.FlatAppearance.BorderSize = 0;
+            this.btnAnterior.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnAnterior.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnterior.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAnterior.ForeColor = System.Drawing.Color.CadetBlue;
+            this.btnAnterior.Location = new System.Drawing.Point(83, 672);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(54, 39);
+            this.btnAnterior.TabIndex = 16;
+            this.btnAnterior.Text = "<<";
+            this.btnAnterior.UseVisualStyleBackColor = false;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
-            // button3
+            // btnSiguiente
             // 
-            this.button3.BackColor = System.Drawing.Color.Black;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(143, 672);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(54, 39);
-            this.button3.TabIndex = 17;
-            this.button3.Text = ">>";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnSiguiente.BackColor = System.Drawing.Color.Black;
+            this.btnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSiguiente.FlatAppearance.BorderSize = 0;
+            this.btnSiguiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSiguiente.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSiguiente.ForeColor = System.Drawing.Color.CadetBlue;
+            this.btnSiguiente.Location = new System.Drawing.Point(143, 672);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(54, 39);
+            this.btnSiguiente.TabIndex = 17;
+            this.btnSiguiente.Text = ">>";
+            this.btnSiguiente.UseVisualStyleBackColor = false;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
-            // button4
+            // btnUltimo
             // 
-            this.button4.BackColor = System.Drawing.Color.Black;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(203, 672);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(54, 39);
-            this.button4.TabIndex = 18;
-            this.button4.Text = ">|";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnUltimo.BackColor = System.Drawing.Color.Black;
+            this.btnUltimo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUltimo.FlatAppearance.BorderSize = 0;
+            this.btnUltimo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnUltimo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnUltimo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUltimo.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUltimo.ForeColor = System.Drawing.Color.CadetBlue;
+            this.btnUltimo.Location = new System.Drawing.Point(203, 672);
+            this.btnUltimo.Name = "btnUltimo";
+            this.btnUltimo.Size = new System.Drawing.Size(54, 39);
+            this.btnUltimo.TabIndex = 18;
+            this.btnUltimo.Text = ">|";
+            this.btnUltimo.UseVisualStyleBackColor = false;
+            this.btnUltimo.Click += new System.EventHandler(this.btnUltimo_Click);
             // 
             // btnNuevo
             // 
@@ -277,13 +288,14 @@
             this.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnNuevo.ForeColor = System.Drawing.Color.Red;
+            this.btnNuevo.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnNuevo.Location = new System.Drawing.Point(285, 669);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(81, 40);
             this.btnNuevo.TabIndex = 19;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnConsulta
             // 
@@ -293,13 +305,14 @@
             this.btnConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulta.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnConsulta.ForeColor = System.Drawing.Color.Red;
+            this.btnConsulta.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnConsulta.Location = new System.Drawing.Point(372, 669);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(100, 40);
             this.btnConsulta.TabIndex = 20;
             this.btnConsulta.Text = "Consulta";
             this.btnConsulta.UseVisualStyleBackColor = false;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // btnModificar
             // 
@@ -309,13 +322,14 @@
             this.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnModificar.ForeColor = System.Drawing.Color.Red;
+            this.btnModificar.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnModificar.Location = new System.Drawing.Point(478, 669);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(111, 40);
             this.btnModificar.TabIndex = 21;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnRetiro
             // 
@@ -325,13 +339,14 @@
             this.btnRetiro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnRetiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRetiro.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRetiro.ForeColor = System.Drawing.Color.Red;
+            this.btnRetiro.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnRetiro.Location = new System.Drawing.Point(604, 669);
             this.btnRetiro.Name = "btnRetiro";
             this.btnRetiro.Size = new System.Drawing.Size(111, 40);
             this.btnRetiro.TabIndex = 22;
             this.btnRetiro.Text = "Retiro";
             this.btnRetiro.UseVisualStyleBackColor = false;
+            this.btnRetiro.Click += new System.EventHandler(this.btnRetiro_Click);
             // 
             // btnSalir
             // 
@@ -350,6 +365,7 @@
             // btnGuardar
             // 
             this.btnGuardar.BackgroundImage = global::Proyecto_final.Properties.Resources.guardar;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
             this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
@@ -358,12 +374,13 @@
             this.btnGuardar.Size = new System.Drawing.Size(36, 38);
             this.btnGuardar.TabIndex = 24;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(12)))), ((int)(((byte)(21)))));
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(770, 788);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnSalir);
@@ -371,9 +388,9 @@
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnConsulta);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnUltimo);
+            this.Controls.Add(this.btnSiguiente);
+            this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.btnPrimero);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel2);
@@ -393,6 +410,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cliente";
             this.Text = "Modificar";
+            this.Load += new System.EventHandler(this.Cliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -416,9 +434,9 @@
         private Panel panel2;
         private Label label7;
         private Button btnPrimero;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button btnAnterior;
+        private Button btnSiguiente;
+        private Button btnUltimo;
         private Button btnNuevo;
         private Button btnConsulta;
         private Button btnModificar;
