@@ -26,14 +26,15 @@ namespace Proyecto_final
         {
          
          //inicializamos las variables
+         
+         InitializeComponent();
          boton = 0;
          i = 0;
          cn = new cConexion();
-         cmd = new SqlCommand("select * from tbl_cliente",cn.AbrirConexion());
+         cmd = new SqlCommand("select * from CLIENTE",cn.AbrirConexion());
          da = new SqlDataAdapter(cmd);
          dt = new DataTable();
          da.Fill(dt);
-         InitializeComponent();
         }
 
         private void txtNombre_Click(object sender, EventArgs e)
@@ -130,6 +131,7 @@ namespace Proyecto_final
             if(i==-1)
             {
                 MessageBox.Show("Es el primer cliente");
+                i = 0;
             }
             llenar(dt, i);
         }
@@ -166,7 +168,7 @@ namespace Proyecto_final
 
         private void txtCedula_Leave(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("select * from tbl_cliente where cedula = '" + txtCedula.Text + "'",cn.AbrirConexion());
+            cmd = new SqlCommand("select * from CLIENTE where cedula = '" + txtCedula.Text + "'",cn.AbrirConexion());
             da = new SqlDataAdapter(cmd);
             DataTable dtb = new DataTable();
             da.Fill(dtb);
@@ -190,7 +192,7 @@ namespace Proyecto_final
                         llenar(dtb, 0);
                         if(MessageBox.Show("Desea borralo","peligro!!",MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
-                            SqlCommand cmdb = new SqlCommand("delete from tbl_cliente where cedula = '" + txtCedula.Text + "'", cn.AbrirConexion());
+                            SqlCommand cmdb = new SqlCommand("delete from CLIENTE where cedula = '" + txtCedula.Text + "'", cn.AbrirConexion());
                             cmdb.ExecuteNonQuery();
                             MessageBox.Show("Cliente Eliminado!!");
                         }
@@ -247,13 +249,13 @@ namespace Proyecto_final
         {
             if(boton==1)
             {
-                cmd = new SqlCommand("insert into tbl_cliente values('" + txtCedula.Text + "','" + txtNombre.Text + "','" + txtApellidos.Text + "','" + txtDireccion.Text + "','" + txtTelefono.Text + "','" + txtEmail.Text + "')", cn.AbrirConexion());
+                cmd = new SqlCommand("insert into CLIENTE values('" + txtCedula.Text + "','" + txtNombre.Text + "','" + txtApellidos.Text + "','" + txtDireccion.Text + "','" + txtTelefono.Text + "','" + txtEmail.Text + "')", cn.AbrirConexion());
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Cliente Creado");
             }
             if(boton==3)
             {
-                cmd = new SqlCommand("update tbl_cliente set nombre ='" + txtNombre.Text + "',apellido ='" + txtApellidos.Text + "',direccion='" + txtDireccion.Text + "',telefono='" + txtTelefono.Text + "',email='" + txtEmail.Text + "' where cedula ='" + "'", cn.AbrirConexion());
+                cmd = new SqlCommand("update CLIENTE set nombre ='" + txtNombre.Text + "',apellido ='" + txtApellidos.Text + "',direccion='" + txtDireccion.Text + "',telefono='" + txtTelefono.Text + "',email='" + txtEmail.Text + "' where cedula ='" + "'", cn.AbrirConexion());
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Cliente Modificado");
             }

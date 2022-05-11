@@ -11,7 +11,7 @@ namespace Proyecto_final.Clases
     internal class cConexion
     {
 
-        static private string CadenaConexion = @"Data Source =.; Initial Catalog = Taller; Integrated Security = True";
+        static private string CadenaConexion = @"Data Source=.;Initial Catalog=BDTaller;Integrated Security=True";
         private SqlConnection Conexion = new SqlConnection(CadenaConexion);
 
         public SqlConnection AbrirConexion()
