@@ -20,7 +20,7 @@ namespace Proyecto_final
         //declaramos las variables
 
         cConexion cn;
-        int contador, boton;
+        int contador;
         SqlCommand cmd;
         SqlDataAdapter da;
         DataTable dt;
@@ -30,8 +30,8 @@ namespace Proyecto_final
         // inicializamos variables
             InitializeComponent();
             cn = new cConexion();
-            contador = 0; boton = 0;     
-            cmd = new SqlCommand("select * from tbl_usuario",cn.AbrirConexion());
+            contador = 0;    
+            cmd = new SqlCommand("select * from Usuario",cn.AbrirConexion());
             da = new SqlDataAdapter(cmd);
             dt = new DataTable();
             da.Fill(dt);
@@ -43,7 +43,7 @@ namespace Proyecto_final
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("select * from tbl_usuario where  usuario = '" + txtUsuario.Text + " ' and password = '" + txtPassword.Text + "'", cn.AbrirConexion());
+                SqlCommand cmd = new SqlCommand("select * from Usuario where  usuario = '" + txtUsuario.Text + " ' and password = '" + txtPassword.Text + "'", cn.AbrirConexion());
 
                 da = new SqlDataAdapter(cmd);
                 dt = new DataTable();
@@ -51,8 +51,8 @@ namespace Proyecto_final
 
                 if(dt.Rows.Count == 1)
                 {
-                    Cliente cliente = new Cliente();
-                    cliente.Show();
+                    Vehiculo vehiculo  = new Vehiculo();
+                    vehiculo.Show();
                 }
                 else 
                 {

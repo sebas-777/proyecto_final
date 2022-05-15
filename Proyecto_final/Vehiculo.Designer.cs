@@ -37,10 +37,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtCedula = new System.Windows.Forms.TextBox();
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.txtNumeroSerial = new System.Windows.Forms.TextBox();
-            this.txtKilometraje = new System.Windows.Forms.TextBox();
+            this.txtcedulaCliente = new System.Windows.Forms.TextBox();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.cmbColor = new System.Windows.Forms.ComboBox();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -69,7 +68,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(319, 44);
+            this.label1.Location = new System.Drawing.Point(354, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 34);
             this.label1.TabIndex = 2;
@@ -79,7 +78,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(40, 341);
+            this.label2.Location = new System.Drawing.Point(32, 305);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 27);
             this.label2.TabIndex = 3;
@@ -89,7 +88,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(40, 275);
+            this.label3.Location = new System.Drawing.Point(36, 231);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 27);
             this.label3.TabIndex = 4;
@@ -99,7 +98,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(40, 211);
+            this.label4.Location = new System.Drawing.Point(40, 158);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 27);
             this.label4.TabIndex = 5;
@@ -109,7 +108,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(40, 404);
+            this.label5.Location = new System.Drawing.Point(36, 395);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(180, 27);
             this.label5.TabIndex = 6;
@@ -121,9 +120,9 @@
             this.label6.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(36, 472);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 27);
+            this.label6.Size = new System.Drawing.Size(187, 27);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Kilometraje";
+            this.label6.Text = "Cedula/Cliente";
             // 
             // label7
             // 
@@ -131,25 +130,14 @@
             this.label7.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(45, 147);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(182, 27);
+            this.label7.Size = new System.Drawing.Size(0, 27);
             this.label7.TabIndex = 8;
-            this.label7.Text = "Cedula Cliente";
-            // 
-            // txtCedula
-            // 
-            this.txtCedula.BackColor = System.Drawing.Color.Red;
-            this.txtCedula.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCedula.Location = new System.Drawing.Point(233, 147);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(470, 20);
-            this.txtCedula.TabIndex = 9;
-            this.txtCedula.Click += new System.EventHandler(this.txtCedula_Click);
             // 
             // txtMatricula
             // 
             this.txtMatricula.BackColor = System.Drawing.Color.Red;
             this.txtMatricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatricula.Location = new System.Drawing.Point(233, 218);
+            this.txtMatricula.Location = new System.Drawing.Point(233, 164);
             this.txtMatricula.Name = "txtMatricula";
             this.txtMatricula.Size = new System.Drawing.Size(470, 20);
             this.txtMatricula.TabIndex = 10;
@@ -159,21 +147,21 @@
             // 
             this.txtNumeroSerial.BackColor = System.Drawing.Color.Red;
             this.txtNumeroSerial.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNumeroSerial.Location = new System.Drawing.Point(233, 341);
+            this.txtNumeroSerial.Location = new System.Drawing.Point(233, 312);
             this.txtNumeroSerial.Name = "txtNumeroSerial";
             this.txtNumeroSerial.Size = new System.Drawing.Size(470, 20);
             this.txtNumeroSerial.TabIndex = 11;
             this.txtNumeroSerial.Click += new System.EventHandler(this.txtNumeroSerial_Click);
             // 
-            // txtKilometraje
+            // txtcedulaCliente
             // 
-            this.txtKilometraje.BackColor = System.Drawing.Color.Red;
-            this.txtKilometraje.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtKilometraje.Location = new System.Drawing.Point(233, 478);
-            this.txtKilometraje.Name = "txtKilometraje";
-            this.txtKilometraje.Size = new System.Drawing.Size(470, 20);
-            this.txtKilometraje.TabIndex = 12;
-            this.txtKilometraje.Click += new System.EventHandler(this.txtKilometraje_Click);
+            this.txtcedulaCliente.BackColor = System.Drawing.Color.Red;
+            this.txtcedulaCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtcedulaCliente.Location = new System.Drawing.Point(233, 478);
+            this.txtcedulaCliente.Name = "txtcedulaCliente";
+            this.txtcedulaCliente.Size = new System.Drawing.Size(470, 20);
+            this.txtcedulaCliente.TabIndex = 12;
+            this.txtcedulaCliente.Click += new System.EventHandler(this.txtKilometraje_Click);
             // 
             // cmbTipo
             // 
@@ -188,7 +176,7 @@
             "Bus",
             "Camion",
             "Volqueta"});
-            this.cmbTipo.Location = new System.Drawing.Point(233, 274);
+            this.cmbTipo.Location = new System.Drawing.Point(233, 235);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(470, 26);
             this.cmbTipo.TabIndex = 13;
@@ -209,7 +197,7 @@
             "Verde",
             "Azul",
             "Gris"});
-            this.cmbColor.Location = new System.Drawing.Point(233, 403);
+            this.cmbColor.Location = new System.Drawing.Point(233, 395);
             this.cmbColor.Name = "cmbColor";
             this.cmbColor.Size = new System.Drawing.Size(470, 26);
             this.cmbColor.TabIndex = 14;
@@ -230,6 +218,7 @@
             this.btnNuevo.TabIndex = 15;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnModificar
             // 
@@ -291,10 +280,9 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.cmbColor);
             this.Controls.Add(this.cmbTipo);
-            this.Controls.Add(this.txtKilometraje);
+            this.Controls.Add(this.txtcedulaCliente);
             this.Controls.Add(this.txtNumeroSerial);
             this.Controls.Add(this.txtMatricula);
-            this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -323,10 +311,9 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox txtCedula;
         private TextBox txtMatricula;
         private TextBox txtNumeroSerial;
-        private TextBox txtKilometraje;
+        private TextBox txtcedulaCliente;
         private ComboBox cmbTipo;
         private ComboBox cmbColor;
         private Button btnNuevo;
