@@ -94,7 +94,7 @@ namespace Proyecto_final
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-             cmd =new SqlCommand("insert into values('" + txtMatricula + " ',' " + cmbTipo + " ' , '" + txtNumeroSerial + " ','" + cmbColor + "''" + txtcedulaCliente + "'",cn.AbrirConexion());
+             cmd =new SqlCommand("insert into Vehiculo('" + txtMatricula + " ',' " + cmbTipo.Text + " ' , '" + txtNumeroSerial + " ','" + cmbColor.Text + "','" + txtcedulaCliente + "'",cn.AbrirConexion());
             cmd.ExecuteNonQuery();
             MessageBox.Show("Vehiculo Inglesado Correctamente");
 
